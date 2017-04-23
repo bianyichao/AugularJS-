@@ -1,0 +1,32 @@
+
+function route($routeProvider){
+	$routeProvider
+        .when('/',{
+            templateUrl:'view/indexView.html',
+            controller:'aaa'
+        }) 
+        .when('/introduce',{
+            templateUrl:'view/introduce.html',
+            controller:'aaa'
+        })
+        .when('/message',{
+            templateUrl:'view/message.html',
+            controller:'aaa'
+        })
+        .when('/caozuo',{
+            templateUrl:'view/indexView.html',
+            controller:'aaa'
+            //templateUrl:'',
+        })
+        .when('/lanmu',{
+            templateUrl:'view/indexView.html',
+            controller:'aaa'
+            //templateUrl:'',
+        })
+        .when('/more',{
+            templateUrl:'view/indexView.html',
+            controller:'aaa'
+            //templateUrl:'',
+        })
+        .otherwise({redirectTo:'/'});
+}
